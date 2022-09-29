@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import Script from "next/script";
+
+import Layout from "../../components/layout";
 
 
 export default function FirstPost(){
     return (
-      <div className="post-container">
+      <Layout>
         <Head>
           <title>First Post</title>
         </Head>
@@ -16,6 +17,6 @@ export default function FirstPost(){
         <p>
           Psikee! Go <Link href="/">back Home</Link>
         </p>
-      </div>
+      </Layout>
     );
 } 
